@@ -47,3 +47,13 @@ gho() {
   re="github.com/([^/]+/[^[:space:]]+)(.git)"
   if [[ $repo =~ $re ]]; then open "https://github.com/${BASH_REMATCH[1]}"; fi
 }
+
+#
+# Tab autocompletion for all the things
+#
+
+if [ ! -f ~/.git-completion.bash ]; then
+	curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+fi
+
+. ~/.git-completion.bash
