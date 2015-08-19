@@ -49,6 +49,9 @@ function parse_git_branch () {
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
+PURPLE="\[\033[0;35m\]"
+BLUE="\[\033[0;34m\]"
+CYAN="\[\033[0;36m\]"
 NO_COLOR="\[\033[0m\]"
 
-PS1="$GREEN\u$NO_COLOR:\W$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+PS1="$PURPLE\u$NO_COLOR:\W$CYAN\$(parse_git_branch)$NO_COLOR\$ "
