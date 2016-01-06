@@ -5,7 +5,8 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 defaults write com.apple.dock autohide -bool true
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string “$HOME/Desktop”
+[ ! -d ~/Desktop/Screenshots  ] && mkdir ~/Desktop/Screenshots
+defaults write com.apple.screencapture location ~/Desktop/Screenshots
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string “png”
