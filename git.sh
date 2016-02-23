@@ -1,5 +1,6 @@
 alias gd="git diff"
 alias ga="git add"
+alias gf="git fetch"
 alias gbd="git branch -D"
 alias gs="git status"
 alias gss="git status -s"
@@ -32,8 +33,10 @@ export USER_DEFAULT=harrietgrace
 # Checkout <pull-request>
 #
 
+# Add some handing for bitbucket vs github repos
+
 gcopr(){
-  git fetch origin pull/$1/head:pr-$1
+  git fetch origin pull/$1/head\:pr-$1
   git checkout pr-$1
 }
 
