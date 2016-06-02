@@ -21,7 +21,6 @@ brew cask install iterm2
 brew cask install slack
 brew cask install spotify
 brew cask install sublime-text3
-brew cask install u-torrent
 brew cask install virtualbox
 brew cask install vlc
 
