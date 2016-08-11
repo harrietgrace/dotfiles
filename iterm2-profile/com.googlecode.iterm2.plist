@@ -110,9 +110,9 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>463 356 924 485 0 0 1920 1057 </string>
+	<string>2383 357 605 485 1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2112 324 1060 536 1920 0 1920 1057 </string>
+	<string>497 155 1060 728 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>447 233 1060 706 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -852,7 +852,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>477528749.37249798</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>489385061.80521601</real>
+	<real>490087089.62620002</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -915,7 +915,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-05T03:30:05Z</date>
+	<date>2016-07-13T05:33:01Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.4</string>
 	<key>SavePasteHistory</key>
@@ -958,6 +958,10 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>2.1.4</string>
 </dict>
