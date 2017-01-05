@@ -42,9 +42,10 @@ alias gpom="git pull origin master"
 alias gfcp='git fetch; git checkout master; git pull origin master'
 alias gri="git rebase -i"
 #alias gcd='cd "`git rev-parse --show-toplevel`"'
-#alias gdmb='git delete-merged-branches'
 #alias gpr='git pull --rebase'
 #alias gprm='git pull --rebase origin master'
+
+alias dmb="git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; "
 
 
 # default
