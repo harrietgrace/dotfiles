@@ -35,7 +35,7 @@ alias gco="git checkout"
 __git_complete gco _git_checkout
 alias gba="git branch -a"
 alias gl="git log"
-alias glp="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
+alias glp="git log --date=format:'%d-%m-%y' --pretty='format:%Cgreen%h%Creset %C(yellow)%ad%Creset %an - %s' --graph"
 alias gp="git pull"
 __git_complete gp _git_pull
 alias gpom="git pull origin master"
