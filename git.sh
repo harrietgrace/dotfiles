@@ -41,6 +41,7 @@ __git_complete gp _git_pull
 alias gpom="git pull origin master"
 alias gfcp='git fetch; git checkout master; git pull origin master'
 alias gri="git rebase -i"
+alias gsubs="git submodule update --init --recursive"
 #alias gcd='cd "`git rev-parse --show-toplevel`"'
 #alias gpr='git pull --rebase'
 #alias gprm='git pull --rebase origin master'
