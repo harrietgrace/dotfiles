@@ -1,5 +1,4 @@
 ## Dotfiles
 
-My basic collection of dotfiles - starting to pull together all the things I have in my environment. 
-
+All my dotfiles :rainbow:
 If you want to copy them, go nuts :sparkles:

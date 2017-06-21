@@ -14,44 +14,50 @@ fi
 
 alias gd="git diff"
 __git_complete gd _git_diff
+
 alias ga="git add"
 __git_complete ga _git_add
+
 alias gf="git fetch"
 __git_complete gf _git_fetch
+
 alias gbd="git branch -D"
 __git_complete gbd _git_branch
+
 alias gs="git status"
 alias gss="git status -s"
 alias gst="git stash"
+
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gpo="git push origin"
+
 alias grh="git reset --hard"
 __git_complete grh _git_reset --hard
-alias gb="git branch"
-alias gcob="git checkout -b"
+
 alias gm="git merge"
 alias gco="git checkout"
 __git_complete gco _git_checkout
+alias gb="git branch"
+alias gcob="git checkout -b"
 alias gba="git branch -a"
+
 alias gl="git log"
 alias glp="git log --date=format:'%d-%m-%y' --pretty='format:%Cgreen%h%Creset %C(yellow)%ad%Creset %an - %s' --graph"
+
 alias gp="git pull"
 __git_complete gp _git_pull
 alias gpom="git pull origin master"
 alias gfcp='git fetch; git checkout master; git pull origin master'
+
 alias gri="git rebase -i"
 alias gsubs="git submodule update --init --recursive"
 #alias gcd='cd "`git rev-parse --show-toplevel`"'
 #alias gpr='git pull --rebase'
 #alias gprm='git pull --rebase origin master'
 
+# delete merged branches
 alias dmb="git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; "
-
-
-# default
-
-export USER_DEFAULT=harrietgrace
 
 #
 # Checkout <pull-request>
