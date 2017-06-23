@@ -36,6 +36,8 @@ mas signin --dialog fezyll@hotmail.com
 mas install 965041401
 # Magnet
 mas install 441258766
+# Newton Mail
+mas install 1059655371
 
 # Settings
 
