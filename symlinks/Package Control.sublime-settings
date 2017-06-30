@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Google Spell Check",
+		"LaTeX Word Count",
+		"LaTeXBox",
+		"LaTeXTools",
+		"MarkdownEditing",
+		"Package Control",
+		"React Templates",
+		"Sass",
+		"SideBarEnhancements"
+	]
+}

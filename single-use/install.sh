@@ -1,5 +1,6 @@
 # Package Management
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
 brew tap caskroom/cask
 brew install brew-cask
 brew tap caskroom/versions
@@ -7,8 +8,10 @@ brew tap caskroom/versions
 brew install node
 npm install n
 brew install git
-brew install wget
 brew install mas
+
+brew install rbenv
+brew install ruby-build
 
 alias upapps="mas upgrade"
 
@@ -30,6 +33,7 @@ brew cask install sublime-text3
 brew cask install vlc
 brew cask install 1password
 
+# pop up a login box for the app store
 mas signin --dialog fezyll@hotmail.com
 
 # LookUp
@@ -40,5 +44,18 @@ mas install 441258766
 mas install 1059655371
 
 # Settings
-
 source osxdefaults.sh
+
+# symlinks
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+ln -s "/dev/harriet/dotfiles/symlinks/.bash_profile" ~
+
+# Sublime settings
+cd "/Users/harriet/Library/Application Support/Sublime Text 3/"
+mkdir -p "Installed Packages" && cd "Installed Packages"
+curl "https://packagecontrol.io/Package%20Control.sublime-package"
+
+mkdir -p "Packages/User" && cd "Packages/User"
+cp "/dev/harriet/dotfiles/symlinks/Package Control.sublime-settings" .
+
+echo "🎉 Finished installing! Some of these changes might need a restart 💁🏻"

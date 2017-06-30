@@ -8,7 +8,7 @@ alias mean="awk '{ sum += \$1 } END { print sum / NR }'"
 
 goto() {
   if [[ "$1" == */* ]]; then
-    cd ~/Documents/code/$1 &> /Documents/null || clone $1
+    cd ~/dev/buildkite/$1 &> /dev/null || clone $1
   fi
 }
 
@@ -28,6 +28,14 @@ _goto()
 }
 
 complete -o default -o nospace -F _goto goto
+
+#
+# Create a dir and cd to it
+#
+
+function mk() {
+  mkdir -p "$@" && cd "$@"
+}
 
 #
 # Style for terminal prompt
