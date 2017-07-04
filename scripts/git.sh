@@ -34,6 +34,7 @@ alias gpo="git push origin"
 
 alias grh="git reset --hard"
 __git_complete grh _git_reset --hard
+alias gr="git reset"
 
 alias gm="git merge"
 alias gco="git checkout"

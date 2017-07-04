@@ -29,3 +29,5 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+# Allow Magnet accessibility access (use tccutil?)
