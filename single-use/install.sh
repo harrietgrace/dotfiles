@@ -29,7 +29,7 @@ brew cask install iterm2
 brew cask install sketch
 brew cask install slack
 brew cask install spotify
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install vlc
 brew cask install 1password
 
@@ -38,8 +38,6 @@ mas signin --dialog fezyll@hotmail.com
 
 # LookUp
 mas install 965041401
-# Magnet
-mas install 441258766
 # Newton Mail
 mas install 1059655371
 
@@ -55,7 +53,12 @@ cd "/Users/harriet/Library/Application Support/Sublime Text 3/"
 mkdir -p "Installed Packages" && cd "Installed Packages"
 curl "https://packagecontrol.io/Package%20Control.sublime-package"
 
-mkdir -p "Packages/User" && cd "Packages/User"
+mkdir -p "../Packages/User" && cd "Packages/User"
 cp "/dev/harriet/dotfiles/symlinks/Package Control.sublime-settings" .
 
+# Get Dracula colours for iterm
+cd "/dev/harriet/"
+git clone https://github.com/dracula/iterm.git
+
+cd ~
 echo "🎉 Finished installing! Some of these changes might need a restart 💁🏻"
