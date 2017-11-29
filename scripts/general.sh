@@ -38,6 +38,11 @@ function mk() {
 }
 
 #
+# Don't save stuff to bash history if you start with a space
+#
+export HISTCONTROL=ignorespace
+
+#
 # Style for terminal prompt
 #
 
