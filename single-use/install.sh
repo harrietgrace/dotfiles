@@ -46,7 +46,7 @@ source osxdefaults.sh
 
 # symlinks
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-ln -s "/dev/harriet/dotfiles/symlinks/.bash_profile" ~
+ln -s "~/dev/harriet/dotfiles/symlinks/.bash_profile" ~
 
 # Sublime settings
 cd "/Users/harriet/Library/Application Support/Sublime Text 3/"
@@ -54,7 +54,8 @@ mkdir -p "Installed Packages" && cd "Installed Packages"
 curl "https://packagecontrol.io/Package%20Control.sublime-package"
 
 mkdir -p "../Packages/User" && cd "Packages/User"
-cp "/dev/harriet/dotfiles/symlinks/Package Control.sublime-settings" .
+
+cp "~/dev/harriet/dotfiles/symlinks/Package Control.sublime-settings" .
 
 # Get Dracula colours for iterm
 cd "/dev/harriet/"

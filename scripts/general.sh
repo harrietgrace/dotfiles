@@ -2,20 +2,14 @@
 alias sum="awk '{ sum += \$1 } END { print sum }'"
 alias mean="awk '{ sum += \$1 } END { print sum / NR }'"
 
-#
 # Go to a <repo>
-#
-
 goto() {
   if [[ "$1" == */* ]]; then
     cd ~/dev/buildkite/$1 &> /dev/null || clone $1
   fi
 }
 
-#
 # Completion for goto()
-#
-
 _goto()
 {
   cur=${COMP_WORDS[COMP_CWORD]}
@@ -29,18 +23,22 @@ _goto()
 
 complete -o default -o nospace -F _goto goto
 
-#
-# Create a dir and cd to it
-#
 
+# Create a dir and cd to it
 function mk() {
   mkdir -p "$@" && cd "$@"
 }
 
 #
-# Style for terminal prompt
-#
+function dev() {
+  cd ~/dev
+}
 
+# Don't save stuff to bash history if you start with a space
+export HISTCONTROL=ignorespace
+
+
+# Style for terminal prompt
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
