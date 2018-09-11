@@ -60,6 +60,11 @@ cp "~/dev/harriet/dotfiles/symlinks/Package Control.sublime-settings" .
 # Get Dracula colours for iterm
 cd "/dev/harriet/"
 git clone https://github.com/dracula/iterm.git
-
 cd ~
+
+# Git config
+git config --global core.excludesfile ~/dev/harriet/dotfiles/.gitignore_global
+git config --global user.name "Harriet Lawrence"
+
 echo "🎉 Finished installing! Some of these changes might need a restart 💁🏻"
+echo "Don't forget to run: git config --global user.email with your git email address"
