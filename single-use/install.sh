@@ -46,7 +46,7 @@ source osxdefaults.sh
 
 # symlinks
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-ln -s "~/dev/harriet/dotfiles/symlinks/.bash_profile" ~
+ln -s "/Users/harriet/dev/harriet/dotfiles/symlinks/.bash_profile" "/Users/harriet/.bash_profile"
 
 # Sublime settings
 cd "/Users/harriet/Library/Application Support/Sublime Text 3/"
