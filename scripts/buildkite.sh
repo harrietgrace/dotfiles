@@ -12,3 +12,7 @@ alias latest="gpom && gf && gsubs && bundle && ysubs && migr"
 # run the docs stuff
 alias tests="bundle && bundle exec rspec"
 alias launch="echo http://localhost:3000/ && bin/rails server"
+
+# go to things
+alias docs="cd ~/dev/buildkite/buildkite/vendor/docs"
+alias bk="cd ~/dev/buildkite/buildkite"
