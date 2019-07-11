@@ -21,8 +21,6 @@ brew cask install alfred
 brew cask install basecamp
 #brew cask install dash
 brew cask install dropbox
-brew cask install firefox
-brew cask install filezilla
 brew cask install flux
 brew cask install google-chrome
 brew cask install iterm2
@@ -30,7 +28,6 @@ brew cask install sketch
 brew cask install slack
 brew cask install spotify
 brew cask install sublime-text
-brew cask install vlc
 brew cask install 1password
 
 # pop up a login box for the app store
@@ -38,8 +35,18 @@ mas signin --dialog fezyll@hotmail.com
 
 # LookUp
 mas install 965041401
-# Newton Mail
-mas install 1059655371
+# Bear
+mas install 1091189122
+# Magnet
+mas install 441258766
+# Trello
+mas install 1278508951
+# Giphy Capture
+mas install 668208984
+# Microsoft Remote Desktop
+mas install 1295203466
+# Things
+mas install 904280696
 
 # Settings
 source osxdefaults.sh
