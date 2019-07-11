@@ -17,8 +17,14 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Set highlight color to green
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+# Set to Dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
+# Set accent colour to pink
+defaults write NSGlobalDomain AppleAccentColor -int 6
+
+# Set highlight color to pink
+defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.749020 0.823529"
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
