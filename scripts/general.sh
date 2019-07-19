@@ -29,9 +29,31 @@ function mk() {
   mkdir -p "$@" && cd "$@"
 }
 
-#
+# Go to the dev folder
 function dev() {
   cd ~/dev
+}
+
+# Restart bluetooth processes
+function blue() {
+  echo "Stopping bluetooth daemon..."
+  sudo launchctl stop com.apple.bluetoothd
+  sudo launchctl stop com.apple.bluetoothaudiod
+
+  echo "Starting bluetooth daemon..."
+  sudo launchctl start com.apple.bluetoothd
+  sudo launchctl start com.apple.bluetoothaudiod
+
+  echo "✨🎧⌨️🖱✨"
+}
+
+# Restart sound processes
+function sound() {
+  echo "Restarting core audio daemon..."
+  sudo launchctl stop com.apple.audio.coreaudiod
+  sudo launchctl start com.apple.audio.coreaudiod
+
+  echo "✨🔊✨"
 }
 
 # Don't save stuff to bash history if you start with a space
