@@ -49,6 +49,7 @@ alias glp="git log --date=format:'%d-%m-%y' --pretty='format:%Cgreen%h%Creset %C
 alias gp="git pull"
 __git_complete gp _git_pull
 alias gpom="git pull origin master"
+alias gfp="git fetch -p && git pull origin master"
 alias gfcp='git fetch; git checkout master; git pull origin master'
 
 alias gri="git rebase -i"
