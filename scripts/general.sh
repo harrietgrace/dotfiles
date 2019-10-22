@@ -56,6 +56,15 @@ function sound() {
   echo "✨🔊✨"
 }
 
+# Restart wifi processes
+function wifi() {
+  echo "Restarting airport daemon..."
+  sudo launchctl stop com.apple.airportd
+  sudo launchctl start com.apple.airportd
+
+  echo "✨📲✨"
+}
+
 # Don't save stuff to bash history if you start with a space
 export HISTCONTROL=ignorespace
 
