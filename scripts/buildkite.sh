@@ -7,7 +7,7 @@ alias ysubs="ysite && yfrontend"
 alias migr="bin/rails db:migrate RAILS_ENV=development"
 
 # run all the things
-alias latest="gpom && gf && gsubs && bundle && ysubs && migr"
+alias latest="gco db/structure.sql && gpom && gf && gsubs && bundle && ysubs && migr"
 
 # run the docs stuff
 alias tests="bundle && bundle exec rspec"
