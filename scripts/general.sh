@@ -1,6 +1,8 @@
 # utils
 alias sum="awk '{ sum += \$1 } END { print sum }'"
 alias mean="awk '{ sum += \$1 } END { print sum / NR }'"
+alias sshg="ssh-add ~/.ssh/github_id"
+alias dot="cd ~/dev/harriet/dotfiles"
 
 # Go to a <repo>
 goto() {
@@ -67,7 +69,6 @@ function wifi() {
 
 # Don't save stuff to bash history if you start with a space
 export HISTCONTROL=ignorespace
-
 
 # Style for terminal prompt
 function parse_git_branch () {
