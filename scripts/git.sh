@@ -3,7 +3,7 @@
 #
 
 if [ ! -f ~/.git-completion.bash ]; then
-	curl https://github.com/git/git/blob/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+	curl https://github.com/git/git/blob/main/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 fi
 
 . ~/.git-completion.bash
@@ -48,18 +48,18 @@ alias glp="git log --date=format:'%d-%m-%y' --pretty='format:%Cgreen%h%Creset %C
 
 alias gp="git pull"
 __git_complete gp _git_pull
-alias gpom="git pull origin master"
-alias gfp="git fetch -p && git pull origin master"
-alias gfcp='git fetch; git checkout master; git pull origin master'
+alias gpom="git pull origin main"
+alias gfp="git fetch -p && git pull origin main"
+alias gfcp='git fetch; git checkout main; git pull origin main'
 
 alias gri="git rebase -i"
 alias gsubs="git submodule update --init --recursive"
 #alias gcd='cd "`git rev-parse --show-toplevel`"'
 #alias gpr='git pull --rebase'
-#alias gprm='git pull --rebase origin master'
+#alias gprm='git pull --rebase origin main'
 
 # delete merged branches
-alias dmb="git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; "
+alias dmb="git checkout --quiet main && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; "
 
 #
 # Checkout <pull-request>
