@@ -72,6 +72,7 @@ cd ~
 # Git config
 git config --global core.excludesfile ~/dev/harriet/dotfiles/.gitignore_global
 git config --global user.name "Harriet Lawrence"
+git config --global pull.rebase false
 
 echo "🎉 Finished installing! Some of these changes might need a restart 💁🏻"
 echo "Don't forget to run: git config --global user.email with your git email address"
