@@ -5,8 +5,8 @@ alias ysubs="ysite"
 # run migrations
 alias migr="bin/rails db:migrate RAILS_ENV=development"
 
-# run all the things
-alias latest="gco db/structure.sql && gpo main && gf && gsubs && bundle && ysubs && migr"
+# run all the things on bk/bk
+alias latest="gco db/structure.sql && git pull origin main && gf && gsubs && bundle && ysubs && migr"
 
 # run the docs stuff (assumes you're in the docs dir already)
 alias tests="bundle && bundle exec rspec"
