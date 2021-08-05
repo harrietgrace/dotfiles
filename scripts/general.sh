@@ -67,6 +67,14 @@ function wifi() {
   echo "✨📲✨"
 }
 
+# Restart wifi processes
+function camera() {
+  echo "Restarting video process..."
+  sudo killall VDCAssistant
+
+  echo "✨📸✨"
+}
+
 # Don't save stuff to bash history if you start with a space
 export HISTCONTROL=ignorespace
 
