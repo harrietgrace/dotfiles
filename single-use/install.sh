@@ -18,17 +18,18 @@ alias upapps="mas upgrade"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 brew cask install alfred
-brew cask install basecamp
+#brew cask install basecamp
 #brew cask install dash
-brew cask install dropbox
-brew cask install flux
+#brew cask install dropbox
+#brew cask install flux
 brew cask install google-chrome
 brew cask install iterm2
-brew cask install sketch
+brew cask install notion
+#brew cask install sketch
 brew cask install slack
 brew cask install spotify
 brew cask install sublime-text
-brew cask install 1password
+#brew cask install 1password
 
 # pop up a login box for the app store
 mas signin --dialog fezyll@hotmail.com
@@ -42,9 +43,9 @@ mas install 441258766
 # Trello
 mas install 1278508951
 # Giphy Capture
-mas install 668208984
+#mas install 668208984
 # Microsoft Remote Desktop
-mas install 1295203466
+#mas install 1295203466
 # Things
 mas install 904280696
 
@@ -53,10 +54,10 @@ source osxdefaults.sh
 
 # symlinks
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-ln -s "/Users/harriet/dev/harriet/dotfiles/symlinks/.bash_profile" "/Users/harriet/.bash_profile"
+ln -s "/Users/halawren/dev/harriet/dotfiles/symlinks/.bash_profile" "/Users/halawren/.bash_profile"
 
 # Sublime settings
-cd "/Users/harriet/Library/Application Support/Sublime Text 3/"
+cd "/Users/halawren/Library/Application Support/Sublime Text 3/"
 mkdir -p "Installed Packages" && cd "Installed Packages"
 curl "https://packagecontrol.io/Package%20Control.sublime-package"
 
