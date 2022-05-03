@@ -63,7 +63,7 @@ curl "https://packagecontrol.io/Package%20Control.sublime-package"
 
 mkdir -p "../Packages/User" && cd "Packages/User"
 
-cp "~/dev/harriet/dotfiles/symlinks/Package Control.sublime-settings" .
+cp "~/dev/harriet/dotfiles/symlinks/Package\ Control.sublime-settings" .
 
 # Get Dracula colours for iterm
 cd "/dev/harriet/"
