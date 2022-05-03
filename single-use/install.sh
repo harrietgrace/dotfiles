@@ -17,19 +17,19 @@ alias upapps="mas upgrade"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-brew cask install alfred
-#brew cask install basecamp
-#brew cask install dash
-#brew cask install dropbox
-#brew cask install flux
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install notion
-#brew cask install sketch
-brew cask install slack
-brew cask install spotify
-brew cask install sublime-text
-#brew cask install 1password
+brew install --cask alfred
+#brew install --cask basecamp
+#brew install --cask dash
+#brew install --cask dropbox
+#brew install --cask flux
+brew install --cask google-chrome
+brew install --cask iterm2
+brew install --cask notion
+#brew install --cask sketch
+brew install --cask slack
+brew install --cask spotify
+brew install --cask sublime-text
+#brew install --cask 1password
 
 # pop up a login box for the app store
 mas signin --dialog fezyll@hotmail.com
